@@ -6,7 +6,7 @@
 /* Paste your deployed Google Apps Script Web App URL below. Leave empty ("")
    if you haven't deployed it yet — the form will show a friendly notice instead
    of trying to submit. */
-const RSVP_ENDPOINT = "";
+const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbxanenqwOBoMS047ACakKO2q9R1wGb1DKu5Uaac5LyUv4PNh9UUidcbOJ7-x95Xvg-pRQ/exec";
 
 document.addEventListener('DOMContentLoaded', () => {
 
