@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rsvpForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      if (!RSVP_ENDPOINT || RSVP_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
+      if (!RSVP_ENDPOINT || RSVP_ENDPOINT === 'https://script.google.com/macros/s/AKfycbzH6MN-zikWKUAfHE8NkWwOtJxe03JahWGT-elJ0209Zls9dzniJpobA4CvVdCMiMCuTQ/exec') {
         rsvpStatus.textContent = 'RSVP is not connected yet. Please configure RSVP_ENDPOINT in script.js.';
         rsvpStatus.className = 'rsvp-status error visible';
         return;
