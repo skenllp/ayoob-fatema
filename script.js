@@ -3,8 +3,10 @@
    ============================================================ */
 
 /* ---------------- RSVP configuration ---------------- */
-/* Paste your deployed Google Apps Script Web App URL below. */
-const RSVP_ENDPOINT = "YOUR_GOOGLE_APPS_SCRIPT_URL";
+/* Paste your deployed Google Apps Script Web App URL below. Leave empty ("")
+   if you haven't deployed it yet — the form will show a friendly notice instead
+   of trying to submit. */
+const RSVP_ENDPOINT = "";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -219,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rsvpForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      if (!RSVP_ENDPOINT || RSVP_ENDPOINT === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
+      if (!RSVP_ENDPOINT) {
         rsvpStatus.textContent = 'RSVP is not connected yet. Please configure RSVP_ENDPOINT in script.js.';
         rsvpStatus.className = 'rsvp-status error visible';
         return;
